@@ -137,7 +137,8 @@ button {
 
     .event-Date-box {
         border-width: 5px 0px 5px 5px;
-        border-color: white;
+        /* border-color: white; */
+        color: rgb(90, 68, 12);
         border-style: double;
         width: 85%;
         padding: 10px;
