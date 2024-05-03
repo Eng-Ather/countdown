@@ -4,14 +4,14 @@
     padding: 0px;
 }
 
-
-body{
+body {
+    width: 100%;
     box-sizing: border-box;
     height: 100vh;
     background-image: url(https://th.bing.com/th/id/OIP.RNL2b3-Mu9_G-G5QmOLU4AHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain);
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,62 +19,61 @@ body{
 
 }
 
-.parent_box{
+p{
+    text-decoration: underline;
+     font-size: 40px;
+}
+.parent_box {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
     color: white;
-    background-image: linear-gradient(to right, rgba(237, 68, 21, 0.7), rgba(45, 2, 2, 0.8) );
+    background-image: linear-gradient(to bottom, rgba(237, 68, 21, 0.5), rgba(45, 2, 2, 0.8));
     border: 2px solid brown;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
 }
 
-.event-Date-box{
-    /* border: 2px 2px 2px 0px; */
-    border-width: 5px 0px 5px 5px;  ;
+.event-Date-box {
+    border-width: 5px 0px 5px 5px;
     border-color: white;
     border-style: double;
     width: 500px;
     padding: 10px;
     text-align: center;
-   
-
 }
-#eventdate{
+
+#eventdate {
     font-size: 24px;
     width: 550px;
     height: 40px;
     text-align: center;
     font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     letter-spacing: 5px;
     color: rgb(90, 68, 12);
 }
-button{ 
+
+button {
     width: 500px;
     height: 40px;
     margin-bottom: 20px;
     font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     letter-spacing: 5px;
     color: rgb(90, 68, 12);
 }
 
-#remaining_days{
-    
+#remaining_days {
     width: 500px;
     height: 80px;
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     letter-spacing: 5px;
     color: rgb(90, 68, 12);
@@ -87,27 +86,63 @@ button{
 
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://th.bing.com/th/id/OIP.RNL2b3-Mu9_G-G5QmOLU4AHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain);
+        border: 2px solid rgb(190, 22, 22);
+        background-color: rgb(3, 23, 23);
+    }
+
+    #remaining_days {
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: rgb(90, 68, 12);
+        background-color: rgba(255, 255, 255, 0.4);
+        outline: auto;
+        outline-width: 5px;
+        outline-style: double;
+        outline-color: white;
+        text-shadow: 2px 1px 2px tomato;
+
+    }
+
+    #eventdate {
+        font-size: 24px;
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 10px;
+        letter-spacing: 5px;
+        color: rgb(90, 68, 12);
+    }
+
+    button {
+        width: 80%;
+        height: 40px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        font-size: 10px;
+        letter-spacing: 5px;
+        color: rgb(90, 68, 12);
+    }
+
+    .event-Date-box {
+        border-width: 5px 0px 5px 5px;
+        border-color: white;
+        border-style: double;
+        width: 85%;
+        padding: 10px;
+        text-align: center;
 
 
-
-
-
-
-
-
-/*------------------- for medi query -------------------*/
-
-/* .event-Date-box{
-    border: 2px solid white;
-    width: 218px;
-    padding: 10px;
-   
-
+    }
 }
-#eventdate{
-    font-size: 24px;
-}
-button{ 
-    width: 195px;
-    margin-bottom: 20px;
-} */
