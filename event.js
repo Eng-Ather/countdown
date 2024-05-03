@@ -14,16 +14,14 @@ console.log(strt_second);
 var event = new Date(eventdate.value);
 var event_second = event.getTime()
 console.log(event_second);
-
-
 var diff =  event_second - strt_second; // geting difference in mili second
 diff = diff/1000; // converting mili second into second
-diff = Math.ceil(diff) //neglecting decimale value
-diff = Math.ceil(diff/60); // converting second into minnute
-diff = Math.ceil(diff/60); // converting minnute into hours
-diff = Math.ceil(diff/24); // conerting hours into days
+diff = Math.floor(diff) //neglecting decimale value
+diff = Math.floor(diff/60); // converting second into minnute
+diff = Math.floor(diff/60); // converting minnute into hours
+diff = Math.floor(diff/24); // conerting hours into days
 console.log(diff)
 
 remaining_days.innerText = `${diff} day Left`
 
-}
+}// end of function
